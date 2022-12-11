@@ -1,0 +1,23 @@
+[
+    "compute.addresses.create",
+    "compute.addresses.delete",
+    "compute.firewalls.create",
+    "compute.firewalls.delete",
+    "compute.firewalls.get",
+    "compute.firewalls.list",
+    "compute.networks.create",
+    "compute.networks.delete",
+    "compute.networks.updatePolicy",
+    "compute.projects.setCommonInstanceMetadata",
+    "compute.projects.setDefaultServiceAccount",
+    "compute.subnetworks.create",
+    "compute.subnetworks.delete",
+    "compute.images.create",
+    "compute.images.get",
+    "compute.images.delete",
+    "compute.images.setLabels",
+    "compute.images.list",
+    "compute.routes.create",
+    "compute.routes.get",
+    "compute.routes.delete"
+]

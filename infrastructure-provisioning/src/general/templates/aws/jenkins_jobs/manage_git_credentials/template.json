@@ -1,0 +1,8 @@
+{
+    "conf_resource": "notebook",
+    "request_id": "RID",
+    "edge_user_name": "NUN",
+    "notebook_instance_name": "NIN",
+    "application": "APP",
+    "git_creds": GIT
+}

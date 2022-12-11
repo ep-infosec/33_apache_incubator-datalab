@@ -1,0 +1,10 @@
+{
+    "request_id":"RID",
+    "conf_resource": "dataengine-service",
+    "edge_user_name":"EUN",
+    "notebook_instance_name":"NIN",
+    "exploratory_name": "EXN",
+    "computational_name": "CON",
+    "dataproc_version": "DVER",
+    "application":"APP"
+}

@@ -1,0 +1,20 @@
+{
+  "exploratory_environment_shapes" :
+  {
+    "GPU optimized": [
+      {"Size": "S", "Description": "p2.xlarge", "Type": "p2.xlarge","Ram": "61.0 GB","Cpu": "4"}
+    ]
+  },
+  "exploratory_environment_versions" :
+  [
+    {
+      "template_name": "Deep Learning AMI Version 60.2",
+      "description": "MXNet-1.8, TensorFlow-2.7, PyTorch-1.10, Neuron, & others. NVIDIA CUDA, cuDNN, NCCL, Intel MKL-DNN, Docker, NVIDIA-Docker & EFA support. For fully managed experience, check: https://aws.amazon.com/sagemaker",
+      "environment_type": "exploratory",
+      "version": "Deep Learning AMI (Ubuntu 18.04) Version 60.2",
+      "vendor": "AWS"
+    }
+  ],
+  "exploratory_environment_images" :
+  []
+}

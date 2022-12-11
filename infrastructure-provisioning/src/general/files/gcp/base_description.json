@@ -1,0 +1,4 @@
+{
+  "template_name": "DataLab GCP Base",
+  "description": "Base image with gcp tools"
+}

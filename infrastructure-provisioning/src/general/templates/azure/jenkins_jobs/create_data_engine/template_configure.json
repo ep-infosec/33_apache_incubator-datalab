@@ -1,0 +1,12 @@
+{
+    "request_id":"RID",
+    "conf_resource": "dataengine",
+    "edge_user_name":"EUN",
+    "dataengine_instance_count":"EIC",
+    "azure_client_id": "ACI",
+    "azure_user_refresh_token":"AURT",
+    "notebook_instance_name":"NNM",
+    "computational_name": "CNAM",
+    "application": "APP",
+    "spark_configurations": SPC
+}

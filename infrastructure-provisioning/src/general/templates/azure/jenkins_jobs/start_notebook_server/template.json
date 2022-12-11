@@ -1,0 +1,8 @@
+{
+    "conf_resource": "notebook",
+    "request_id":"RID",
+    "edge_user_name":"NUN",
+    "azure_user_refresh_token":"AURT",
+    "notebook_instance_name":"NIN",
+    "git_creds": GIT
+}

@@ -1,0 +1,13 @@
+{
+    "conf_resource": "notebook",
+    "request_id":"RID",
+    "azure_client_id":"ACI",
+    "azure_user_refresh_token":"AURT",
+    "azure_notebook_instance_size":"NIT",
+    "edge_user_name":"NUN",
+    "application":"APP",
+    "notebook_image_name":"IMAGE",
+    "vpc_name":"VPC",
+    "git_creds": GIT,
+    "spark_configurations": SPC
+}

@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "declaration": false,
+    "target": "es2015",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es2017", "es2015", "dom"],
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "angularCompilerOptions": {
+     //"fullTemplateTypeCheck": true,
+    // "preserveWhitespaces": true
+    "annotationsAs": "decorators",
+    "enableIvy": false
+  },
+  "skipLibCheck": true
+}

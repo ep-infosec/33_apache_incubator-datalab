@@ -1,0 +1,76 @@
+# ******************************************************************************
+#
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+#
+# ******************************************************************************
+
+<#assign LOG_ROOT_DIR="/var/opt/datalab/log">
+<#assign KEYS_DIR="/home/${sys['user.name']}/keys">
+<#assign KEY_STORE_PATH="${KEYS_DIR}/ssn.keystore.jks">
+<#assign KEY_STORE_PASSWORD="KEYSTORE_PASSWORD">
+<#assign TRUST_STORE_PATH="${JRE_HOME}/lib/security/cacerts">
+<#assign TRUST_STORE_PASSWORD="changeit">
+
+# Available options are aws, azure, gcp
+<#assign CLOUD_TYPE="CLOUD_PROVIDER">
+cloudProvider: ${CLOUD_TYPE}
+
+#Switch on/off developer mode here
+<#assign DEV_MODE="false">
+devMode: ${DEV_MODE}
+
+mongo:
+  host: localhost
+  port: 27017
+  username: admin
+  password: MONGO_PASSWORD
+  database: datalabdb
+
+selfService:
+  protocol: https
+  host: localhost
+  port: 8443
+  jerseyClient:
+    timeout: 3s
+    connectionTimeout: 3s
+
+securityService:
+  protocol: https
+  host: localhost
+  port: 8090
+  jerseyClient:
+    timeout: 20s
+    connectionTimeout: 20s
+
+provisioningService:
+  jerseyClient:
+    timeout: 3s
+    connectionTimeout: 3s
+
+bucketService:
+  jerseyClient:
+    timeout: 50m
+    connectionTimeout: 3s
+
+billingService:
+  jerseyClient:
+    timeout: 4m
+    connectionTimeout: 3s
+
+# Log out user on inactivity
+inactiveUserTimeoutMillSec: 7200000

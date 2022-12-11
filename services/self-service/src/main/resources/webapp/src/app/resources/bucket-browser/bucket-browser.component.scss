@@ -1,0 +1,484 @@
+/*!
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+.dialog-header {
+  padding-left: 33px !important;
+}
+
+.bucket-browser {
+  font-size: 14px;
+  font-weight: 400;
+
+  .loading-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+
+    .uploading {
+      width: 100%;
+      padding-bottom: 50px;
+      text-align: center;
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .path {
+    display: flex;
+    margin: 0 4px 30px 0;
+    padding: 4px 4px 4px 0;
+    color: rgba(0, 0, 0, 0.87);
+    overflow: hidden;
+    white-space: nowrap;
+
+    &-folder {
+      position: relative;
+    }
+
+    .url {
+      display: block;
+      font-weight: 600;
+      overflow: hidden;
+      direction: rtl;
+
+      &-folder {
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #00bcd4;
+        cursor: pointer;
+
+        &:first-of-type {
+          padding-left: 5px;
+        }
+      }
+
+      &-icon {
+        color: lightgrey;
+      }
+    }
+  }
+
+  bottom: 0;
+
+  .dialog-content {
+    padding: 0 35px;
+  }
+
+  .content-box {
+    height: 500px;
+  }
+
+  .submit {
+    display: flex;
+    justify-content: space-between;
+
+    .left-side-butts {
+      display: flex;
+    }
+
+    .butt:not(.action-menu-item) {
+      position: relative;
+      margin: 10px;
+      overflow: hidden;
+
+      &.actions-btn {
+        margin: 10px 10px 0 10px;
+        padding-right: 38px;
+
+        .material-icons {
+          position: absolute;
+          top: 7px;
+          right: 30px;
+          font-size: 25px;
+          transition: ease-in-out 1s;
+        }
+      }
+
+      &.first-btn {
+        margin-left: 0;
+      }
+
+      &.refresh {
+        margin-right: 0;
+      }
+
+      &.action-menu-item {
+        &:hover {
+          color: #00bcd4;
+          background-color: #fafafa;
+        }
+
+        &.disabled {
+          &:hover {
+            color: #577289;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bucket-wrapper {
+  display: flex;
+  width: 100%;
+  height: 57vh;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+
+  &.added-upload {
+    height: 40vh;
+  }
+
+  .bucket-selection {
+    position: relative;
+    width: 2%;
+    padding-top: 6px;
+    border-right: 2px solid rgba(0, 0, 0, 0.12);
+    transition: 0.2s;
+
+    &.opened {
+      width: 33.3%;
+
+      .button-wrapper {
+        text-align: right;
+        left: auto;
+
+        i {
+          padding-right: 3px;
+        }
+      }
+    }
+
+    .button-wrapper {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 9px;
+      text-align: center;
+
+      i {
+        cursor: pointer;
+        font-size: 18px;
+
+        &:hover {
+          color: #00bcd4;
+        }
+      }
+    }
+  }
+}
+
+.navigation {
+  width: 31.3%;
+  height: 100%;
+  padding-top: 6px;
+  overflow: auto;
+  transition: 0.2s;
+
+  &.selection-opened {
+    width: 66.7%;
+  }
+
+  .folder-tree {
+    .folder {
+      line-height: 30px;
+    }
+  }
+
+  .mat-tree-node {
+    min-height: auto;
+  }
+}
+
+.directory {
+  position: relative;
+  width: 66.7%;
+  max-height: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  border-left: 2px solid rgba(0, 0, 0, 0.12);
+
+  &.selection-opened {
+    display: none;
+  }
+
+  .folder-tree {
+    max-height: 100%;
+    padding: 6px 15px 15px 15px;
+    overflow-x: auto;
+    overflow-y: overlay;
+
+    .name {
+      display: flex;
+      align-items: center;
+      width: 60%;
+      overflow: hidden;
+
+      .name-wrap {
+        padding-right: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      &-folder {
+        .folder-name {
+          padding-left: 8px;
+        }
+      }
+
+      &-file {
+        i {
+          transform: translateX(6px);
+        }
+        span.item-name {
+          padding-left: 4px;
+
+          &.removed-checkbox {
+            padding-left: 4px;
+          }
+        }
+      }
+    }
+
+    .size {
+      width: 15%;
+
+      &-folder {
+        padding-left: 4px;
+      }
+    }
+
+    .date {
+      width: 25%;
+
+      .th_date {
+        font-size: 13px;
+      }
+    }
+
+    .progress-wrapper {
+      flex: 1;
+    }
+
+    .material-icons.close {
+      font-size: 15px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+.folder-item {
+  display: flex;
+  align-items: center;
+
+  &.t_header {
+    position: absolute;
+    top: -41px;
+    left: 0;
+    right: 0;
+
+    .folder-item-wrapper {
+      height: 52px;
+    }
+
+    .th_name {
+      padding-left: 29px;
+      font-size: 14px;
+      cursor: pointer;
+
+      &:hover {
+        color: #00bcd4;
+      }
+    }
+
+    .filter-files {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 3px 0 3px 3px;
+
+      .filter-name {
+        height: 20px;
+        width: 90%;
+        font-size: 14px;
+      }
+
+      span {
+        transform: translateY(2px);
+
+        &:hover {
+          i {
+            color: #00bcd4;
+          }
+        }
+      }
+    }
+
+    .th_size {
+      padding-left: 3px;
+      font-size: 14px;
+      cursor: auto;
+    }
+
+    .th_date {
+      font-size: 14px !important;
+      cursor: auto;
+    }
+  }
+  .folder-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.87);
+
+    &.header-item {
+      cursor: auto;
+
+      .name {
+        margin-left: -3px;
+      }
+    }
+
+    i {
+      color: rgb(232, 232, 232);
+    }
+
+    &:hover:not(.header-wrapper) {
+      color: #00bcd4;
+      transition: 0.3s ease-in-out;
+
+      i {
+        color: #00bcd4;
+        transition: 0.3s ease-in-out;
+      }
+
+      .empty-checkbox {
+        border-color: #00bcd4;
+      }
+
+      .progress-wrapper {
+        .progres {
+          border-color: #00bcd4 !important;
+        }
+      }
+    }
+  }
+}
+
+.empty-checkbox {
+  position: relative;
+  min-width: 16px;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  border-radius: 2px;
+  border: 2px solid lightgrey;
+
+  &.checked {
+    border-color: #35afd5;
+    background-color: #35afd5;
+  }
+
+  .checked-checkbox {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    width: 5px;
+    height: 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+  }
+}
+
+.folder-item-name {
+  span {
+    color: #000;
+  }
+
+  .check-box {
+    background-color: red;
+  }
+}
+
+.upload-window {
+  height: 15vh;
+  margin-top: 2vh;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+
+  .upload-header {
+    position: relative;
+    height: 30px;
+    padding-left: 8px;
+    background: #f6fafe;
+    line-height: 30px;
+
+    .modal-title {
+      width: 90%;
+      margin: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-weight: 500;
+      color: #455c74;
+      font-size: 13px;
+      background: #f6fafe;
+
+      &::after {
+        content: "";
+        display: block;
+      }
+    }
+
+    .close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 30px;
+      width: 30px;
+      font-size: 20px;
+      font-weight: 300;
+      border: 0;
+      background: none;
+      color: #577289;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.45s ease-in-out;
+
+      &:hover {
+        color: #36afd5;
+      }
+    }
+  }
+}
+
+.events-none {
+  pointer-events: none;
+}

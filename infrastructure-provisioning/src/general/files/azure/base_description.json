@@ -1,0 +1,4 @@
+{
+  "template_name": "DataLab Azure Base",
+  "description": "Base image with aws tools"
+}

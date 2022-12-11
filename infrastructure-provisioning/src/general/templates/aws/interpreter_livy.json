@@ -1,0 +1,181 @@
+{
+  "interpreterSettings": {
+    "2C6RJRBD1": {
+      "id": "2C6RJRBD1",
+      "name": "local_interpreter",
+      "group": "livy",
+      "properties": {
+        "zeppelin.livy.concurrentSQL": {
+            "propertyName": "zeppelin.livy.concurrentSQL",
+            "value": "false",
+            "type": "checkbox"
+          },
+        "livy.spark.master":{
+            "envName": "Master",
+            "propertyName": "master",
+            "value": "local[*]",
+            "description": "Spark master uri. ex) spark://masterhost:7077",
+            "type": "string"
+          },
+        "livy.spark.home": {
+            "propertyName": "livy.spark.home",
+            "value": "/opt/spark/",
+            "type": "string"
+          },
+        "livy.spark.hadoop.fs.s3a.endpoint": {
+            "envName": "SPARK_HADOOP_FS_S3A_ENDPOINT",
+            "propertyName": "livy.spark.hadoop.fs.s3a.endpoint",
+            "value": "ENDPOINTURL",
+            "description": "",
+            "type": "string"
+          },
+        "zeppelin.interpreter.localRepo": {
+            "propertyName": "livy.spark.home",
+            "value": "/opt/zeppelin/local-repo/2CAC665T6",
+            "type": "string"
+          },
+        "zeppelin.livy.url": {
+            "propertyName": "zeppelin.livy.url",
+            "value": "http://localhost:LIVY_PORT",
+            "type": "string"
+          },
+	    "livy.spark.hadoop.fs.s3a.buffer.dir": {
+            "propertyName": "livy.spark.hadoop.fs.s3a.buffer.dir",
+            "value": "/tmp",
+            "type": "string"
+          },
+        "zeppelin.spark.useHiveContext": {
+            "propertyName": "zeppelin.spark.useHiveContext",
+            "value": "true",
+            "type": "checkbox"
+          },
+        "livy.spark.app.name": {
+            "propertyName": "livy.spark.app.name",
+            "value": "Zeppelin",
+            "type": "string"
+          },
+        "zeppelin.spark.printREPLOutput": {
+            "propertyName": "zeppelin.spark.printREPLOutput",
+            "value": "true",
+            "type": "checkbox"
+          },
+        "zeppelin.spark.maxResult": {
+            "propertyName": "zeppelin.spark.maxResult",
+            "value": "1000",
+            "type": "number"
+          },
+        "zeppelin.spark.concurrentSQL": {
+            "propertyName": "zeppelin.spark.concurrentSQL",
+            "value": "false",
+            "type": "checkbox"
+          },
+        "zeppelin.spark.importImplicit": {
+            "propertyName": "zeppelin.spark.importImplicit",
+            "value": "true",
+            "type": "checkbox"
+          },
+        "zeppelin.dep.localrepo": {
+            "propertyName": "zeppelin.dep.localrepo",
+            "value": "local-repo",
+            "type": "string"
+          },
+        "zeppelin.dep.additionalRemoteRepository": {
+            "propertyName": "zeppelin.dep.additionalRemoteRepository",
+            "value": "spark-packages,http://dl.bintray.com/spark-packages/maven,false;",
+            "type": "string"
+          },
+        "livy.spark.hadoop.fs.s3a.fast.upload": {
+            "propertyName": "livy.spark.hadoop.fs.s3a.fast.upload",
+            "value": "true",
+            "type": "checkbox"
+          },
+        "livy.spark.driver.memory": {
+              "envName": "MEMORY_DRIVER",
+              "propertyName": "livy.spark.driver.memory",
+              "value": "DRIVER_MEMORY",
+              "description": "",
+              "type": "string"
+          }
+      },
+      "interpreterGroup": [
+        {
+          "class": "org.apache.zeppelin.livy.LivySparkInterpreter",
+          "name": "spark"
+        },
+        {
+          "class": "org.apache.zeppelin.livy.LivyPySparkInterpreter",
+          "name": "pyspark"
+        },
+        {
+          "class": "org.apache.zeppelin.livy.LivyPySpark3Interpreter",
+          "name": "pyspark3"
+        }
+      ],
+      "dependencies": [],
+      "option": {
+        "remote": true,
+        "perNoteSession": false,
+        "perNoteProcess": false,
+        "isExistingProcess": false
+      }
+    }
+  },
+  "interpreterBindings": {
+    "2C5NV42W8": [
+      "2C3B8E6M6"
+    ]
+  },
+  "interpreterRepositories": [
+    {
+      "id": "central",
+      "type": "default",
+      "url": "https://repo1.maven.org/maven2/",
+      "releasePolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "snapshotPolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "mirroredRepositories": [],
+      "repositoryManager": false
+    },
+    {
+      "id": "local",
+      "type": "default",
+      "url": "file:///home/OS_USER/.m2/repository",
+      "releasePolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "snapshotPolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "mirroredRepositories": [],
+      "repositoryManager": false
+    },
+    {
+      "id": "local",
+      "type": "default",
+      "url": "file:///root/.m2/repository",
+      "releasePolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "snapshotPolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "mirroredRepositories": [],
+      "repositoryManager": false
+    }
+  ]
+}

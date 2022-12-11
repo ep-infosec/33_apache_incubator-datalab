@@ -1,0 +1,10 @@
+{
+    "conf_resource": "notebook",
+    "request_id":"RID",
+    "gcp_notebook_instance_size":"NIT",
+    "edge_user_name":"NUN",
+    "exploratory_name": "EXN",
+    "application":"APP",
+    "git_creds": GIT,
+    "spark_configurations": SPC
+}

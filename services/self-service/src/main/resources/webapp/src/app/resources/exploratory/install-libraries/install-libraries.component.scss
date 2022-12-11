@@ -1,0 +1,501 @@
+/*!
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+@import "_variables.scss";
+
+.aligner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  > div {
+    &.actions {
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex: initial;
+      justify-content: center;
+      flex-direction: initial;
+      margin-bottom: 10px;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+  }
+}
+
+.info {
+  height: 30%;
+}
+
+.top-wrapper {
+  height: 285px;
+}
+
+.list-item {
+  display: flex;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.object {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  padding-right: 10px;
+}
+
+.size {
+  width: 30%;
+}
+
+ul.resources {
+  padding-left: 10px;
+}
+
+.search-box {
+  display: flex;
+  padding: 20px 25px 10px;
+
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    & > div {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .control-group {
+      width: 50%;
+      padding-bottom: 0;
+
+      &.java-library-search {
+        width: 100%;
+
+        .label {
+          width: 10%;
+        }
+
+        .control {
+          width: 85%;
+        }
+      }
+
+      .control {
+        width: 70%;
+
+        input {
+          font-size: 15px;
+          padding-left: 15px;
+        }
+
+        .dropdown-list button {
+          font-size: 14px;
+          padding-top: 0;
+        }
+      }
+
+      .label {
+        width: 20%;
+      }
+    }
+
+    .search {
+      flex-grow: 1;
+      padding-bottom: 0;
+      flex-direction: column;
+      margin-top: 40px;
+      box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+      .mat-form-field-flex {
+        padding-left: 15px;
+      }
+
+      .chip-list {
+        width: 100%;
+        overflow-y: auto;
+
+        &.mat-form-field {
+          width: 100%;
+
+          .mat-form-field-infix {
+            display: flex;
+          }
+        }
+
+        .mat-input-flex {
+          padding: 2px 10px;
+        }
+      }
+    }
+  }
+}
+
+.suggestions {
+  text-decoration: none;
+  list-style: none;
+
+  mat-option {
+    position: relative;
+    padding-top: 4px;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+
+    a {
+      display: block;
+      cursor: pointer;
+      text-decoration: none;
+      color: #718ba6;
+
+      &:hover,
+      span:hover {
+        color: #35afd5;
+      }
+    }
+
+    strong {
+      position: absolute;
+      top: 5px;
+      right: 20px;
+      width: 50px;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 600;
+
+      i {
+        position: absolute;
+        top: 9px;
+        right: -21px;
+        color: #35afd5;
+      }
+    }
+  }
+
+  span {
+    color: rgba(122, 146, 172, 0.6);
+
+    .configuring {
+      color: #35afd5;
+    }
+
+    .highlight {
+      color: #35afd5;
+    }
+  }
+}
+
+mat-chip.mat-chip:not(.mat-basic-chip) {
+  margin: 2px !important;
+  background-color: rgba(47, 174, 215, 0.2) !important;
+  color: #687e96;
+}
+
+/* Tab info */
+
+.mat-dialog-container {
+  position: relative;
+}
+
+.libs-info {
+  .mat-list {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    padding-top: 0;
+    margin-top: 8px;
+    overflow-y: auto;
+
+    .list-header {
+      position: sticky;
+      top: 0;
+      z-index: 99;
+      line-height: 40px;
+      background-color: #fff;
+    }
+
+    .filter-row {
+      position: sticky;
+      top: 56px;
+      z-index: 99;
+      background-color: #fff;
+    }
+
+    .scrollingList {
+      .info {
+        p {
+          text-align: center;
+          padding: 40px;
+        }
+      }
+    }
+  }
+}
+
+.lib-name {
+  width: 27%;
+  padding-right: 10px;
+  padding-left: 20px;
+
+  &-col {
+    display: flex;
+  }
+
+  .lib-name-wrapper {
+    overflow: hidden;
+    display: block;
+  }
+
+  strong {
+    font-weight: 400;
+  }
+}
+
+.lib-group,
+.lib-destination {
+  width: 17%;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+.lib-status {
+  width: 17%;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+.lib-resource-type {
+  width: 17%;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+.lib-group-col {
+  width: 17%;
+  padding-left: 17px;
+  padding-right: 10px;
+}
+
+.st-group {
+  display: flex;
+  flex-direction: column;
+  width: 51%;
+
+  .wrap-col {
+    display: flex;
+    padding: 5px 0;
+
+    .lib-destination-col {
+      width: 33.3%;
+      padding-left: 15px;
+    }
+
+    .lib-resource-type-col {
+      width: 33.3%;
+      padding-left: 15px;
+      color: #36afd5;
+    }
+
+    .lib-status-col {
+      position: relative;
+      width: 33.3%;
+      padding-left: 15px;
+
+      .warn-action {
+        position: absolute;
+        top: -3px;
+        right: -50px;
+
+        div {
+          display: inline-block;
+          width: 25px;
+          cursor: pointer;
+          pointer-events: auto;
+
+          span {
+            display: block;
+          }
+        }
+
+        .lib-error {
+          color: #35afd5;
+        }
+      }
+    }
+  }
+}
+
+.mat-dialog-container.mat-dialog-container .install-libraries#dialog-box {
+  .mat-header-cell {
+    position: absolute;
+    right: 10px;
+    padding: 0;
+    border: none;
+  }
+
+  .filter-actions {
+    display: flex;
+    margin-left: 6px;
+
+    .btn {
+      height: auto;
+      width: auto;
+      min-width: 0;
+      padding: 6px;
+
+      .mat-button-wrapper {
+        display: flex;
+      }
+    }
+  }
+}
+
+.install-libraries .dropdown-multiselect {
+  .list-menu li {
+    a {
+      font-size: 13px;
+
+      &.list-item {
+        color: #4a5c89 !important;
+      }
+    }
+  }
+
+  button span {
+    padding-top: 7px;
+    padding-bottom: 3px;
+  }
+}
+
+.error-message {
+  position: absolute;
+  left: 20%;
+  top: 40px;
+  font-size: 11px;
+  color: red;
+
+  &.version-error {
+    right: 0;
+    left: unset;
+  }
+}
+
+.info-icon {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.lib-info {
+  width: 100%;
+
+  .delete-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 10px;
+
+    .butt.action {
+      line-height: 26px;
+    }
+  }
+}
+
+.btn {
+  line-height: 26px;
+
+  &.install-btn {
+    margin-left: 0;
+  }
+}
+
+.control-relative {
+  position: relative;
+
+  .plus-icon {
+    position: absolute;
+    right: -40px;
+    top: 5px;
+    color: #35afd5;
+    font-size: 27px;
+    cursor: pointer;
+
+    &.not-allow {
+      color: lightgray;
+    }
+  }
+
+  .other-message {
+    position: absolute;
+    top: 40px;
+    left: 12px;
+    font-size: 12px;
+    color: $link-color;
+  }
+}
+
+@media screen and (max-height: 840px) {
+  .libs-info {
+    .mat-list {
+      height: 250px;
+      .dropdown-multiselect .list-menu {
+        max-height: 143px;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 720px) {
+  .libs-info {
+    .mat-list {
+      height: 200px;
+      .dropdown-multiselect .list-menu {
+        max-height: 94px;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 640px) {
+  .aligner > div.actions {
+    margin-bottom: 0;
+  }
+
+  .install-libraries {
+    padding-bottom: 90px;
+  }
+
+  .libs-info {
+    .mat-list {
+      height: 160px;
+      .dropdown-multiselect .list-menu {
+        max-height: 54px;
+      }
+    }
+  }
+
+  .message {
+    padding: 10px 20px;
+  }
+}

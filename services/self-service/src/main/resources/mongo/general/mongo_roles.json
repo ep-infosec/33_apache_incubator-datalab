@@ -1,0 +1,184 @@
+[
+  {
+    "_id": "imgShareOwnImages",
+    "description": "Allow to share own images",
+    "type": "IMAGE",
+    "cloud": "GENERAL",
+    "pages": [
+      "/api/image/share"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "imgTerminateOwnImages",
+    "description": "Allow to terminate own images",
+    "type": "IMAGE",
+    "cloud": "GENERAL",
+    "pages": [
+      "/api/image/terminate"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateBasedOnCustomOwnImages",
+    "description": "Create Notebook based on custom own images",
+    "type": "NOTEBOOK",
+    "cloud": "GENERAL",
+    "pages": [
+      "/api/exploratory/createFromOwnCustomImage"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateBasedOnSharedImages",
+    "description": "Create Notebook based on custom shared images",
+    "type": "NOTEBOOK",
+    "cloud": "GENERAL",
+    "pages": [
+      "/api/exploratory/createFromSharedCustomImage"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbBillingReportFull",
+    "description": "View full billing report for all users",
+    "type": "BILLING",
+    "cloud": "GENERAL",
+    "pages": [
+      "/api/infrastructure_provision/billing"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "bucketBrowserView",
+    "description": "Allow to view object via bucket browser",
+    "type": "BUCKET_BROWSER",
+    "cloud": "GENERAL",
+    "pages": [
+      "/api/bucket/view"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "bucketBrowserUpload",
+    "description": "Allow to upload object via bucket browser",
+    "type": "BUCKET_BROWSER",
+    "cloud": "GENERAL",
+    "pages": [
+      "/api/bucket/upload"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "bucketBrowserDownload",
+    "description": "Allow to download object via bucket browser",
+    "type": "BUCKET_BROWSER",
+    "cloud": "GENERAL",
+    "pages": [
+      "/api/bucket/download"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "connectedPlatformsView",
+    "description": "Allow to view connected platforms",
+    "type": "CONNECTED_PLATFORMS",
+    "cloud": "GENERAL",
+    "pages": [
+      "/api/connected_platforms/view"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "connectedPlatformsDisconnect",
+    "description": "Allow to disconnect connected platforms",
+    "type": "CONNECTED_PLATFORMS",
+    "cloud": "GENERAL",
+    "pages": [
+      "/api/connected_platforms/disconnect"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "connectedPlatformsAdd",
+    "description": "Allow to add connected platforms",
+    "type": "CONNECTED_PLATFORMS",
+    "cloud": "GENERAL",
+    "pages": [
+      "/api/connected_platforms/add"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "bucketBrowserDelete",
+    "description": "Allow to delete object via bucket browser",
+    "type": "BUCKET_BROWSER",
+    "cloud": "GENERAL",
+    "pages": [
+      "/api/bucket/delete"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "projectAdmin",
+    "description": "Allow to execute administration operation per project",
+    "type": "ADMINISTRATION",
+    "cloud": "GENERAL",
+    "pages": [
+      "environment/*",
+      "/roleManagement",
+      "/api/settings",
+      "/user/settings",
+      "/api/project",
+      "/api/endpoint"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "admin",
+    "description": "Allow to execute administration operation",
+    "type": "ADMINISTRATION",
+    "cloud": "GENERAL",
+    "pages": [
+      "environment/*",
+      "/api/infrastructure/backup",
+      "/roleManagement",
+      "/roleManagement/create",
+      "/roleManagement/delete",
+      "/api/settings",
+      "/user/settings",
+      "/api/project",
+      "/api/project/create",
+      "/api/endpoint"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  }
+]

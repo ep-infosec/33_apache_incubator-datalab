@@ -1,0 +1,106 @@
+/*!
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+.endpoints-dialog {
+  .content-box {
+    height: 400px;
+    padding: 10px 30px 30px;
+
+    .split {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+
+      form {
+        padding: 20px 10px;
+
+        .control-group {
+          .error {
+            position: absolute;
+            right: 0;
+            bottom: 5px;
+            top: 34px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+
+    .action-group {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+
+    .endpoints {
+      height: 310px;
+      padding-right: 5px;
+      overflow: auto;
+
+      table.mat-table {
+        width: 100%;
+        thead {
+          background: transparent;
+          .mat-header-row {
+            background-clip: padding-box;
+          }
+        }
+        tr {
+          td {
+            max-width: 150px;
+            vertical-align: middle;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &::after {
+              content: "";
+              display: block;
+            }
+          }
+        }
+
+        .actions {
+          width: 14%;
+          color: #607d8b;
+          text-align: center;
+
+          span {
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+
+            .mat-icon {
+              padding-top: 5px;
+              font-size: 18px;
+            }
+
+            &:hover {
+              color: darken(#607d8b, 10%);
+            }
+          }
+        }
+      }
+
+      .content {
+        p {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}

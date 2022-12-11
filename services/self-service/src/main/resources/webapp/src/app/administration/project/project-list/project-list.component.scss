@@ -1,0 +1,194 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+.table-wrapper {
+  position: relative;
+  margin: 0 -15px -15px -15px;
+  padding: 0 15px 15px 15px;
+  height: calc(100vh - 120px);
+  overflow: auto;
+  .mat-header-cell {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: white;
+  }
+}
+
+table {
+  width: 100%;
+
+  td {
+    vertical-align: middle;
+  }
+
+  .name {
+    width: 25%;
+    padding: 20px 0 10px 24px;
+    &.project-name {
+      padding-top: 10px;
+    }
+  }
+
+  th.name {
+    padding-top: 10px;
+  }
+
+  .mat-header-row {
+    padding-top: 12px;
+  }
+
+  .endpoints {
+    width: 45%;
+    padding: 15px 0;
+
+    .resource-wrap {
+      .resource-name,
+      .resource-status {
+        width: 30%;
+        padding-left: 0;
+      }
+    }
+
+    .label-endpoint,
+    .label-endpoint-status {
+      display: inline-block;
+      width: 30%;
+    }
+
+    .label-status {
+      width: 30%;
+    }
+
+    &.source {
+      &.endpoints .resource-wrap {
+        justify-content: flex-start;
+      }
+      .no-details {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .groups {
+    width: 20%;
+    padding: 10px 0;
+  }
+
+  .status {
+    width: 15%;
+  }
+
+  .project-actions {
+    width: 10%;
+    padding: 10px 24px;
+    color: #607d8b;
+    text-align: right;
+    vertical-align: top;
+
+    &.mat-header-cell {
+      padding-top: 19px;
+      color: rgba(0, 0, 0, 0.54);
+    }
+
+    span:not(.mat-header-cell span) {
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+
+      .mat-icon {
+        font-size: 18px;
+        padding-top: 5px;
+      }
+
+      &:hover {
+        color: darken(#607d8b, 10%);
+      }
+    }
+  }
+}
+
+td.settings {
+  position: relative;
+  vertical-align: middle !important;
+  text-align: right;
+  .actions {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    background-image: url(../../../../assets/svg/settings_icon.svg);
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.project-seting-item,
+.project-setting-button{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #edf1f5;
+  cursor: pointer;
+  color: #577289;
+  &:last-child {
+    border-bottom: none;
+  }
+  &:hover {
+    color: #36afd5;
+    transition: all 0.45s ease-in-out;
+  }
+  a {
+    padding-left: 5px;
+  }
+}
+
+.project-setting-button {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.disabled-button {
+  color: rgba(0,0,0,0.26);
+  background-color: rgba(0,0,0,0.12);
+  cursor: not-allowed;
+}
+
+.material-icons {
+  font-size: 18px;
+  padding-top: 1px;
+}
+
+.list-menu {
+  min-width: 205px;
+}
+
+.project-endpoint-name {
+  color: #577289;
+}
+
+.actions-list {
+  padding: 10px 0px;
+}
+
+.mat-chip {
+  max-width: 200px !important;
+  white-space: nowrap;
+  display: inline-block;
+}

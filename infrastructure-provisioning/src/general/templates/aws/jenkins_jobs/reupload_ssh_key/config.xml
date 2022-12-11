@@ -1,0 +1,84 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<!--
+
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+
+-->
+<project>
+  <actions/>
+  <description>Reupload user key</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>instance_id</name>
+          <description>names of instances for azure, gcp and instance id for aws</description>
+          <defaultValue>zhrab-redhat-yevhen-hrabovskyi-edge</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>edge_user_name</name>
+          <description>edge user name</description>
+          <defaultValue>yevhen_hrabovskyi@epam.com</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>conf_service_base_name</name>
+          <description>service base name</description>
+          <defaultValue>zhrab-redhat</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>conf_os_family</name>
+          <description>os family: redhat, debian</description>
+          <defaultValue>redhat</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>Action</name>
+          <description></description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>reupload_key</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>rand=`openssl rand -hex 10`;
+          echo &apos;{&quot;edge_user_name&quot;:&quot;&apos;${edge_user_name}&apos;&quot;,&quot;conf_service_base_name&quot;:&quot;&apos;${conf_service_base_name}&apos;&quot;,&quot;conf_os_family&quot;:&quot;&apos;${conf_os_family}&apos;&quot;,&quot;resource_id&quot;:&quot;&apos;${instance_id}&apos;&quot;}&apos;
+          | sudo docker run -i -e &quot;conf_key_name=BDCC-DSS-POC&quot; -e &quot;conf_resource=edge&quot; -e &quot;request_id=${rand}&quot;
+          -v /home/datalab-user/keys:/root/keys -v /opt/datalab/tmp/result:/response -v
+          /var/opt/datalab/log/edge:/logs/edge docker.datalab-edge --action reupload_key
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

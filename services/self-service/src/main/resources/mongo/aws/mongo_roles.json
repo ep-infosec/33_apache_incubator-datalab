@@ -1,0 +1,338 @@
+[
+  {
+    "_id": "nbShapes_p2.xlarge_fetching",
+    "description": "Use p2.xlarge instance shape for notebook",
+    "type": "NOTEBOOK_SHAPE",
+    "cloud": "AWS",
+    "exploratory_shapes": [
+      "p2.xlarge"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbShapes_t2.medium_fetching",
+    "description": "Use t2.medium instance shape for notebook",
+    "type": "NOTEBOOK_SHAPE",
+    "cloud": "AWS",
+    "exploratory_shapes": [
+      "t2.medium"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbShapes_r3.xlarge_fetching",
+    "description": "Use r3.xlarge instance shape for notebook",
+    "type": "NOTEBOOK_SHAPE",
+    "cloud": "AWS",
+    "exploratory_shapes": [
+      "r3.xlarge"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbShapes_r4.2xlarge_fetching",
+    "description": "Use r4.2xlarge instance shape for notebook",
+    "type": "NOTEBOOK_SHAPE",
+    "cloud": "AWS",
+    "exploratory_shapes": [
+      "r4.2xlarge"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbShapes_r3.4xlarge_fetching",
+    "description": "Use r3.4xlarge instance shape for notebook",
+    "type": "NOTEBOOK_SHAPE",
+    "cloud": "AWS",
+    "exploratory_shapes": [
+      "r3.4xlarge"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbShapes_r3.8xlarge_fetching",
+    "description": "Use r3.8xlarge instance shape for notebook",
+    "type": "NOTEBOOK_SHAPE",
+    "cloud": "AWS",
+    "exploratory_shapes": [
+      "r3.8xlarge"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbShapes_c4.large_fetching",
+    "description": "Use c4.large instance shape for notebook",
+    "type": "NOTEBOOK_SHAPE",
+    "cloud": "AWS",
+    "exploratory_shapes": [
+      "c4.large"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbShapes_c4.2xlarge_fetching",
+    "description": "Use c4.2xlarge instance shape for notebook",
+    "type": "NOTEBOOK_SHAPE",
+    "cloud": "AWS",
+    "exploratory_shapes": [
+      "c4.2xlarge"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbShapes_c4.8xlarge_fetching",
+    "description": "Use c4.8xlarge instance shape for notebook",
+    "type": "NOTEBOOK_SHAPE",
+    "cloud": "AWS",
+    "exploratory_shapes": [
+      "c4.8xlarge"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateDeeplearning",
+    "description": "Create Notebook Deep Learning",
+    "type": "NOTEBOOK",
+    "cloud": "AWS",
+    "exploratories": [
+      "docker.datalab-deeplearning"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateJupyter",
+    "description": "Create Notebook Jupyter",
+    "type": "NOTEBOOK",
+    "cloud": "AWS",
+    "exploratories": [
+      "docker.datalab-jupyter"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateJupyterLab",
+    "description": "Create Notebook JupyterLab",
+    "type": "NOTEBOOK",
+    "cloud": "AWS",
+    "exploratories": [
+      "docker.datalab-jupyterlab"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateRstudio",
+    "description": "Create Notebook RStudio",
+    "type": "NOTEBOOK",
+    "cloud": "AWS",
+    "exploratories": [
+      "docker.datalab-rstudio"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateTensor",
+    "description": "Create Notebook Jupyter with TensorFlow",
+    "type": "NOTEBOOK",
+    "cloud": "AWS",
+    "exploratories": [
+      "docker.datalab-tensor"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateZeppelin",
+    "description": "Create Notebook Apache Zeppelin",
+    "type": "NOTEBOOK",
+    "cloud": "AWS",
+    "exploratories": [
+      "docker.datalab-zeppelin"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateTensorJupyterlab",
+    "description": "Create Notebook JupyterLab with TensorFlow",
+    "type": "NOTEBOOK",
+    "cloud": "AWS",
+    "exploratories": [
+      "docker.datalab-tensor-jupyterlab"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateTensorRstudio",
+    "description": "Create Notebook RStudio with TensorFlow",
+    "type": "NOTEBOOK",
+    "cloud": "AWS",
+    "exploratories": [
+      "docker.datalab-tensor-rstudio"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateDataEngine",
+    "description": "Create Data Engine",
+    "type": "COMPUTATIONAL",
+    "cloud": "AWS",
+    "computationals": [
+      "docker.datalab-dataengine"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateDataEngineService",
+    "description": "Create Data Engine Service",
+    "type": "COMPUTATIONAL",
+    "cloud": "AWS",
+    "computationals": [
+      "docker.datalab-dataengine-service"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "compShapes_c4.large_fetching",
+    "description": "Use c4.large instance shape for cluster",
+    "type": "COMPUTATIONAL_SHAPE",
+    "cloud": "AWS",
+    "computational_shapes": [
+      "c4.large"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "compShapes_c4.xlarge_fetching",
+    "description": "Use c4.xlarge instance shape for cluster",
+    "type": "COMPUTATIONAL_SHAPE",
+    "cloud": "AWS",
+    "computational_shapes": [
+      "c4.xlarge"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "compShapes_r3.xlarge_fetching",
+    "description": "Use r3.xlarge instance shape for cluster",
+    "type": "COMPUTATIONAL_SHAPE",
+    "cloud": "AWS",
+    "computational_shapes": [
+      "r3.xlarge"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "compShapes_r4.2xlarge_fetching",
+    "description": "Use r4.2xlarge instance shape for cluster",
+    "type": "COMPUTATIONAL_SHAPE",
+    "cloud": "AWS",
+    "computational_shapes": [
+      "r4.2xlarge"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "compShapes_r3.4xlarge_fetching",
+    "description": "Use r3.4xlarge instance shape for cluster",
+    "type": "COMPUTATIONAL_SHAPE",
+    "cloud": "AWS",
+    "computational_shapes": [
+      "r3.4xlarge"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "compShapes_r3.8xlarge_fetching",
+    "description": "Use r3.8xlarge instance shape for cluster",
+    "type": "COMPUTATIONAL_SHAPE",
+    "cloud": "AWS",
+    "computational_shapes": [
+      "r3.8xlarge"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "compShapes_c4.2xlarge_fetching",
+    "description": "Use c4.2xlarge instance shape for cluster",
+    "type": "COMPUTATIONAL_SHAPE",
+    "cloud": "AWS",
+    "computational_shapes": [
+      "c4.2xlarge"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "compShapes_c4.8xlarge_fetching",
+    "description": "Use c4.8xlarge instance shape for cluster",
+    "type": "COMPUTATIONAL_SHAPE",
+    "cloud": "AWS",
+    "computational_shapes": [
+      "c4.8xlarge"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "compShapes_p2.xlarge_fetching",
+    "description": "Use p2.xlarge instance shape for cluster",
+    "type": "COMPUTATIONAL_SHAPE",
+    "cloud": "AWS",
+    "computational_shapes": [
+      "p2.xlarge"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  }
+]

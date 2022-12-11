@@ -1,0 +1,139 @@
+/*!
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+.manage-ungit {
+  .content-box {
+    height: 500px;
+    padding: 25px 35px;
+
+    .list-header div {
+      font-size: 13px;
+    }
+  }
+
+  .add-creds {
+    margin: 15px 5px 0;
+  }
+
+  .scrollingList {
+    height: 250px;
+    padding: 5px 0;
+    overflow-x: hidden;
+
+    &.info {
+      display: flex;
+      justify-content: center;
+      height: 300px;
+
+      p {
+        align-self: center;
+      }
+    }
+  }
+
+  .mail-field,
+  .user-field,
+  .login-field {
+    width: 25%;
+    padding: 5px;
+    overflow: hidden;
+  }
+
+  .hostname-field {
+    overflow: hidden;
+    padding: 5px;
+    width: 30%;
+  }
+
+  .actions {
+    position: relative;
+    width: 50px;
+    overflow: visible;
+
+    span {
+      position: absolute;
+      top: -10px;
+      left: 0;
+      zoom: 0.8;
+
+      &.git-actions {
+        cursor: pointer;
+
+        &.remove {
+          left: 35px;
+        }
+      }
+    }
+  }
+
+  .git-form {
+    display: flex;
+
+    .control-group {
+      position: relative;
+      width: 100%;
+      padding: 10px 0 25px;
+      font-family: "Open Sans", sans-serif;
+
+      input[type="text"],
+      input[type="password"],
+      input[type="email"] {
+        font-size: 14px;
+      }
+
+      .label {
+        width: 30%;
+        font-size: 14px;
+      }
+
+      .control {
+        width: 70%;
+      }
+
+      .danger_color {
+        position: absolute;
+        top: 45px;
+        padding: 0;
+        font-size: 12px;
+        right: 0;
+      }
+    }
+
+    .col {
+      padding: 30px 10px;
+      width: 50%;
+    }
+
+    .danger_color {
+      padding-top: 0;
+    }
+  }
+
+  .submit {
+    margin-top: 60px;
+  }
+
+  .mat-list {
+    height: 300px;
+    .mat-list-item {
+      color: #607d8b;
+      font-size: 13px;
+    }
+  }
+}

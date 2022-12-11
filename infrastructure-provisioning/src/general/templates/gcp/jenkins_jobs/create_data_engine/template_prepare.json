@@ -1,0 +1,12 @@
+{
+    "request_id":"RID",
+    "conf_resource": "dataengine",
+    "edge_user_name":"EUN",
+    "dataengine_instance_count":"EIC",
+    "gcp_dataengine_master_size":"GDMS",
+    "gcp_dataengine_slave_size":"GDSS",
+    "notebook_instance_name":"NNM",
+    "computational_name": "CNAM",
+    "application": "APP",
+    "spark_configurations": SPC
+}

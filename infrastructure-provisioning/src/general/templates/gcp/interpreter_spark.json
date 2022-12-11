@@ -1,0 +1,251 @@
+{
+  "interpreterSettings": {
+    "2C6RJRBD2": {
+      "id": "2C6RJRBD2",
+      "name": "local_interpreter_python3",
+      "group": "spark",
+      "properties": {
+        "zeppelin.spark.printREPLOutput": {
+            "propertyName": "zeppelin.spark.printREPLOutput",
+            "value": "true",
+            "description": "Print REPL output",
+            "type": "checkbox"
+          },
+        "zeppelin.dep.additionalRemoteRepository": {
+            "envName": "ZEPPELIN_DEP_ADDITIONALREMOTEREPOSITORY",
+            "propertyName": "zeppelin.dep.additionalRemoteRepository",
+            "value": "spark-packages,http://dl.bintray.com/spark-packages/maven,false;",
+            "description": "",
+            "type": "string"
+          },
+        "zeppelin.spark.sql.stacktrace": {
+            "envName": "ZEPPELIN_SPARK_SQL_STACKTRACE",
+            "propertyName": "zeppelin.spark.sql.stacktrace",
+            "value": "false",
+            "description": "",
+            "type": "checkbox"
+          },
+        "zeppelin.spark.importImplicit":{
+            "envName": "ZEPPELIN_SPARK_IMPORTIMPLICIT",
+            "propertyName": "zeppelin.spark.importImplicit",
+            "value": "true",
+            "description": "",
+            "type": "checkbox"
+          },
+        "zeppelin.spark.concurrentSQL": {
+            "envName": "ZEPPELIN_SPARK_CONCURRENTSQL",
+            "propertyName": "zeppelin.spark.concurrentSQL",
+            "value": "false",
+            "description": "",
+            "type": "checkbox"
+          },
+        "zeppelin.spark.useHiveContext": {
+            "envName": "ZEPPELIN_SPARK_USEHIVECONTEXT",
+            "propertyName": "zeppelin.spark.useHiveContext",
+            "value": "true",
+            "description": "Use HiveContext instead of SQLContext if it is true.",
+            "type": "checkbox"
+          },
+        "zeppelin.pyspark.python": {
+            "envName": "ZEPPELIN_PYSPARK_PYTHON",
+            "propertyName": "zeppelin.pyspark.python",
+            "value": "python3.5",
+            "description": "",
+            "type": "string"
+          },
+        "zeppelin.dep.localrepo": {
+            "envName": "ZEPPELIN_DEP_LOCALREPO",
+            "propertyName": "zeppelin.dep.localrepo",
+            "value": "local-repo",
+            "description": "",
+            "type": "string"
+          },
+        "zeppelin.spark.maxResult": {
+            "envName": "ZEPPELIN_SPARK_MAXRESULT",
+            "propertyName": "zeppelin.spark.maxResult",
+            "value": "1000",
+            "description": "Max number of Spark SQL result to display.",
+            "type": "number"
+          },
+        "master":{
+            "envName": "Master",
+            "propertyName": "spark.master",
+            "value": "local[*]",
+            "description": "Spark master uri. ex) spark://masterhost:7077",
+            "type": "string"
+          },
+        "spark.app.name": {
+            "envName": "SPARK_APP_NAME",
+            "propertyName": "spark.app.name",
+            "value": "Zeppelin",
+            "description": "The name of spark application.",
+            "type": "string"
+          },
+        "spark.hadoop.fs.s3a.endpoint": {
+            "envName": "SPARK_HADOOP_FS_S3A_ENDPOINT",
+            "propertyName": "spark.hadoop.fs.s3a.endpoint",
+            "value": "ENDPOINTURL",
+            "description": "",
+            "type": "string"
+          },
+        "spark.driver.memory": {
+              "envName": "MEMORY_DRIVER",
+              "propertyName": "spark.driver.memory",
+              "value": "DRIVER_MEMORY",
+              "description": "",
+              "type": "string"
+          },
+        "spark.pyspark.python": {
+              "envName": "PYSPARK_PYTHON",
+              "propertyName": "spark.pyspark.python",
+              "value": "PYTHON_VENV_PATH",
+              "description": "",
+              "type": "string"
+          }
+      },
+      "interpreterGroup": [
+        {
+          "class": "org.apache.zeppelin.spark.SparkInterpreter",
+          "name": "spark"
+        },
+        {
+          "class": "org.apache.zeppelin.spark.PySparkInterpreter",
+          "name": "pyspark"
+        }
+      ],
+      "dependencies": [],
+      "option": {
+        "remote": true,
+        "perNoteSession": false,
+        "perNoteProcess": false,
+        "isExistingProcess": false
+      }
+    },
+    "2D89JUYA9": {
+      "id": "2D89JUYA9",
+      "name": "md",
+      "group": "md",
+      "properties": {
+        "markdown.parser.type": "pegdown"
+      },
+      "status": "READY",
+      "interpreterGroup": [
+        {
+          "name": "md",
+          "class": "org.apache.zeppelin.markdown.Markdown",
+          "defaultInterpreter": false,
+          "editor": {
+            "language": "markdown",
+            "editOnDblClick": true
+          }
+        }
+      ],
+      "dependencies": [],
+      "option": {
+        "remote": true,
+        "port": -1,
+        "perNote": "shared",
+        "perUser": "shared",
+        "isExistingProcess": false,
+        "setPermission": false,
+        "users": [],
+        "isUserImpersonate": false
+      }
+    },
+    "2DG931872": {
+      "id": "2DG931872",
+      "name": "sh",
+      "group": "sh",
+      "properties": {
+        "zeppelin.interpreter.output.limit": "102400",
+        "shell.working.directory.user.home": "false",
+        "zeppelin.shell.keytab.location": "",
+        "shell.command.timeout.millisecs": "60000",
+        "zeppelin.interpreter.localRepo": "/opt/zeppelin/local-repo/2DG931872",
+        "zeppelin.shell.principal": "",
+        "zeppelin.shell.auth.type": ""
+      },
+      "status": "READY",
+      "interpreterGroup": [
+        {
+          "name": "sh",
+          "class": "org.apache.zeppelin.shell.ShellInterpreter",
+          "defaultInterpreter": false,
+          "editor": {
+            "language": "sh",
+            "editOnDblClick": false
+          }
+        }
+      ],
+      "dependencies": [],
+      "option": {
+        "remote": true,
+        "port": -1,
+        "perNote": "shared",
+        "perUser": "shared",
+        "isExistingProcess": false,
+        "setPermission": false,
+        "users": [],
+        "isUserImpersonate": false
+      }
+    }
+  },
+  "interpreterBindings": {
+    "2C5NV42W8": [
+      "2C3B8E6M6"
+    ]
+  },
+  "interpreterRepositories": [
+    {
+      "id": "central",
+      "type": "default",
+      "url": "https://repo1.maven.org/maven2/",
+      "releasePolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "snapshotPolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "mirroredRepositories": [],
+      "repositoryManager": false
+    },
+    {
+      "id": "local",
+      "type": "default",
+      "url": "file:///home/OS_USER/.m2/repository",
+      "releasePolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "snapshotPolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "mirroredRepositories": [],
+      "repositoryManager": false
+    },
+    {
+      "id": "local",
+      "type": "default",
+      "url": "file:///root/.m2/repository",
+      "releasePolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "snapshotPolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "mirroredRepositories": [],
+      "repositoryManager": false
+    }
+  ]
+}

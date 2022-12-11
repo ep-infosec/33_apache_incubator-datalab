@@ -1,0 +1,326 @@
+[
+  {
+    "_id": "nbShapes_a2-highgpu-1g_fetching",
+    "description": "Use a2-highgpu-1g instance shape for notebook",
+    "type": "NOTEBOOK_SHAPE",
+    "cloud": "GCP",
+    "exploratory_shapes": [
+      "a2-highgpu-1g"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbShapes_n1-highcpu-2_fetching",
+    "description": "Use n1-highcpu-2 instance shape for notebook",
+    "type": "NOTEBOOK_SHAPE",
+    "cloud": "GCP",
+    "exploratory_shapes": [
+      "n1-highcpu-2"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbShapes_n1-highcpu-8_fetching",
+    "description": "Use n1-highcpu-8 instance shape for notebook",
+    "type": "NOTEBOOK_SHAPE",
+    "cloud": "GCP",
+    "exploratory_shapes": [
+      "n1-highcpu-8"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbShapes_n1-highcpu-32_fetching",
+    "description": "Use n1-highcpu-32 instance shape for notebook",
+    "type": "NOTEBOOK_SHAPE",
+    "cloud": "GCP",
+    "exploratory_shapes": [
+      "n1-highcpu-32"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbShapes_n1-highmem-4_fetching",
+    "description": "Use n1-highmem-4 instance shape for notebook",
+    "type": "NOTEBOOK_SHAPE",
+    "cloud": "GCP",
+    "exploratory_shapes": [
+      "n1-highmem-4"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbShapes_n1-highmem-16_fetching",
+    "description": "Use n1-highmem-16 instance shape for notebook",
+    "type": "NOTEBOOK_SHAPE",
+    "cloud": "GCP",
+    "exploratory_shapes": [
+      "n1-highmem-16"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbShapes_n1-highmem-32_fetching",
+    "description": "Use n1-highmem-32 instance shape for notebook",
+    "type": "NOTEBOOK_SHAPE",
+    "cloud": "GCP",
+    "exploratory_shapes": [
+      "n1-highmem-32"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbShapes_n1-standard-2_fetching",
+    "description": "Use n1-standard-2 instance shape for notebook",
+    "type": "NOTEBOOK_SHAPE",
+    "cloud": "GCP",
+    "exploratory_shapes": [
+      "n1-standard-2"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateDeeplearning",
+    "description": "Create Notebook Deep Learning",
+    "type": "NOTEBOOK",
+    "cloud": "GCP",
+    "exploratories": [
+      "docker.datalab-deeplearning"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateJupyter",
+    "description": "Create Notebook Jupyter",
+    "type": "NOTEBOOK",
+    "cloud": "GCP",
+    "exploratories": [
+      "docker.datalab-jupyter"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateJupyterGpu",
+    "description": "Create Notebook Jupyter Gpu",
+    "type": "NOTEBOOK",
+    "cloud": "GCP",
+    "exploratories": [
+      "docker.datalab-jupyter-gpu"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateJupyterLab",
+    "description": "Create Notebook JupyterLab",
+    "type": "NOTEBOOK",
+    "cloud": "GCP",
+    "exploratories": [
+      "docker.datalab-jupyterlab"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateSuperset",
+    "description": "Create Notebook Superset",
+    "type": "NOTEBOOK",
+    "cloud": "GCP",
+    "exploratories": [
+      "docker.datalab-superset"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateRstudio",
+    "description": "Create Notebook RStudio",
+    "type": "NOTEBOOK",
+    "cloud": "GCP",
+    "exploratories": [
+      "docker.datalab-rstudio"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateTensor",
+    "description": "Create Notebook Jupyter with TensorFlow",
+    "type": "NOTEBOOK",
+    "cloud": "GCP",
+    "exploratories": [
+      "docker.datalab-tensor"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateTensorRstudio",
+    "description": "Create Notebook RStudio with TensorFlow",
+    "type": "NOTEBOOK",
+    "cloud": "GCP",
+    "exploratories": [
+      "docker.datalab-tensor-rstudio"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateZeppelin",
+    "description": "Create Notebook Apache Zeppelin",
+    "type": "NOTEBOOK",
+    "cloud": "GCP",
+    "exploratories": [
+      "docker.datalab-zeppelin"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateDataEngine",
+    "description": "Create Data Engine",
+    "type": "COMPUTATIONAL",
+    "cloud": "GCP",
+    "computationals": [
+      "docker.datalab-dataengine"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "nbCreateDataEngineService",
+    "description": "Create Data Engine Service",
+    "type": "COMPUTATIONAL",
+    "cloud": "GCP",
+    "computationals": [
+      "docker.datalab-dataengine-service"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "compShapes_n1-standard-2_fetching",
+    "description": "Use n1-standard-2 instance shape for cluster",
+    "type": "COMPUTATIONAL_SHAPE",
+    "cloud": "GCP",
+    "computational_shapes": [
+      "n1-standard-2"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "compShapes_n1-highmem-4_fetching",
+    "description": "Use n1-highmem-4 instance shape for cluster",
+    "type": "COMPUTATIONAL_SHAPE",
+    "cloud": "GCP",
+    "computational_shapes": [
+      "n1-highmem-4"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "compShapes_n1-highmem-16_fetching",
+    "description": "Use n1-highmem-16 instance shape for cluster",
+    "type": "COMPUTATIONAL_SHAPE",
+    "cloud": "GCP",
+    "computational_shapes": [
+      "n1-highmem-16"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "compShapes_n1-highmem-32_fetching",
+    "description": "Use n1-highmem-32 instance shape for cluster",
+    "type": "COMPUTATIONAL_SHAPE",
+    "cloud": "GCP",
+    "computational_shapes": [
+      "n1-highmem-32"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "compShapes_n1-highcpu-8_fetching",
+    "description": "Use n1-highcpu-8 instance shape for cluster",
+    "type": "COMPUTATIONAL_SHAPE",
+    "cloud": "GCP",
+    "computational_shapes": [
+      "n1-highcpu-8"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "compShapes_n1-highcpu-2_fetching",
+    "description": "Use n1-highcpu-2 instance shape for cluster",
+    "type": "COMPUTATIONAL_SHAPE",
+    "cloud": "GCP",
+    "computational_shapes": [
+      "n1-highcpu-2"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "compShapes_n1-highcpu-32_fetching",
+    "description": "Use n1-highcpu-32 instance shape for cluster",
+    "type": "COMPUTATIONAL_SHAPE",
+    "cloud": "GCP",
+    "computational_shapes": [
+      "n1-highcpu-32"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  },
+  {
+    "_id": "compShapes_a2-highgpu-1g_fetching",
+    "description": "Use a2-highgpu-1g instance shape for cluster",
+    "type": "COMPUTATIONAL_SHAPE",
+    "cloud": "GCP",
+    "computational_shapes": [
+      "a2-highgpu-1g"
+    ],
+    "groups": [
+      "$anyuser"
+    ]
+  }
+]
